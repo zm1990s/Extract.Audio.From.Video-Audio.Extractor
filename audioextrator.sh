@@ -3,8 +3,8 @@ if [ "$1" = "" ] ; then
   echo -e "\e[36m\naudioextrator.sh 2014 by MinZhang"
   echo -e "https://github.com/zm1990s/AudioExtrato\n"
   echo "Extracts the audio track of a video file without transcoding:"
-  echo "Support almost all of the video types, like mp4, mkv, flv, avi, m4v"
-  echo "Support servel most common audio encodes, mp3, aac, ac3, flac, ogg, dts"
+  echo "Support almost all of the video containers, like mp4, mkv, flv, avi, m4v"
+  echo "Support servel most common audio codecs, mp3, aac, ac3, flac, ogg, dts"
   echo -e "\n Usage:    ./audioextrator.sh Filename \n Example:  ./audioextrator.sh test.mp4\n\e[m"
   exit
 fi
@@ -13,7 +13,7 @@ AUDIOCODEC=$(ffmpeg -i "$1" 2>&1 | grep Stream | grep Audio)
 echo $AUDIOCODEC
 #echo "${AUDIOCODEC}" | grep mp3 &> /dev/null
 echo start............................
-case $AUDIOCODEC in 
+case $AUDIOCODEC in
 *aac*)
 ffmpeg -loglevel 0 -i "$1" -vn -acodec copy "$1".aac && STATUSTEXT="Saved as $1.aac"|| STATUSTEXT="FFmpeg quit unsuccessfully!"
 ;;
@@ -39,7 +39,7 @@ ffmpeg -loglevel 0 -i "$1" -vn -acodec copy "$1".flac && STATUSTEXT="Saved as $1
 ffmpeg -loglevel 0 -i "$1" -vn -acodec copy "$1".mp2 && STATUSTEXT="Saved as $1.mp2"|| STATUSTEXT="FFmpeg quit unsuccessfully!"
 ;;
 *)
-echo -e "\e[31m unknow audio encodes, exiting... sorry about that \n you can submit your error informations to Github and I'll try to fix it \e[m"
+echo -e "\e[31m unknown audio encodecs, exiting... sorry about that \n you can report an issue to Github and I'll try to fix it \e[m"
 exit 1
 ;;
 esac

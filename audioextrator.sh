@@ -39,7 +39,7 @@ ffmpeg -loglevel 0 -i "$1" -vn -acodec copy "$1".flac && STATUSTEXT="Saved as $1
 ffmpeg -loglevel 0 -i "$1" -vn -acodec copy "$1".mp2 && STATUSTEXT="Saved as $1.mp2"|| STATUSTEXT="FFmpeg quit unsuccessfully!"
 ;;
 *)
-echo -e "\e[31m unknown audio encodecs, exiting... sorry about that \n you can report an issue to Github and I'll try to fix it \e[m"
+echo -e "\e[31m unknown audio codecs, exiting... sorry about that \n you can report an issue to Github and I'll try to fix it \e[m"
 exit 1
 ;;
 esac

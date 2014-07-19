@@ -8,7 +8,7 @@ It support almost all of the video file types and support the most common audio 
 
 **Usage:** `extractaudio Filename` 
 
-**Requires: **
+**Requires:**
 
 * [`ffmpeg`](http://www.ffmpeg.org/)
 

@@ -1,12 +1,12 @@
 `audioextrator.sh` extracts audio from video files.
 
-It uses FFmpeg as backend can extracts audio losslessly from video file, because it **do not transcodes**.
+It can extract audio losslessly from video file using FFmpeg, because it **does not transcode**.
 
-It support almost all of the video file types and support the most common audio encodes :
+It supports almost all of the video containers and supports the most common audio codecs :
 
 `aac` `ac3` `mp3` `mp2` `ogg` `wma` `dts` `flac`
 
-**Usage:** `extractaudio Filename` 
+**Usage:** `extractaudio Filename`
 
 **Requires:**
 
@@ -15,16 +15,16 @@ It support almost all of the video file types and support the most common audio 
 **Examples:**
 
     ./audioextrator.sh testfile.mp4
-  
+
     sh audioextrator.sh testfile.flv
 
 **Install:**
 
     sudo mv audioextrator.sh /usr/local/bin/audioextrator.sh
     sudo chmod 755 /usr/local/bin/audioextrator.sh
-    
+
 **Inspired by and Thanks to [NoNoNo](https://github.com/NoNoNo/shellscripts-extractaudio)**
-    
+
 **See also:**
 
 * [Wikipedia: *Comparison of container formats*](http://en.wikipedia.org/wiki/Comparison_of_container_formats)

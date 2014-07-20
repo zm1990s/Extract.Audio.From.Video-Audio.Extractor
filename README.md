@@ -1,3 +1,5 @@
+English
+===== 
 `audioextrator.sh` extracts audio from video files.
 
 It can extract audio losslessly from video file using FFmpeg, because it **does not transcode**.
@@ -9,6 +11,8 @@ It supports almost all of the video containers and supports the most common audi
 It supports ffmpeg parameter, e.g. If you want to extract part of audio, you can use `-ss` and/or `-to`
 
 `-ss` means start time, `to` means stop time .so `-ss 100 -to 170` means extract audio from 100s to 170s
+
+you can also use it to cut Audio Files without any losses, but **it could get wrong** ....
 
 **Usage:** 
 
@@ -53,6 +57,8 @@ It supports ffmpeg parameter, e.g. If you want to extract part of audio, you can
 支持部分 ffmpeg 参数，例如，使用 `-ss` 和/或 `-to` 导出部分音频。
 
 `-ss` 表示起始时间, `to` 表示停止时间。 `-ss 100 -to 170` 就表示导出100秒到170秒间的音频。
+
+你也可以用以上参数来无损剪辑音频，但是有可能出问题（个人测试过）
 
 **使用方法:** 
 

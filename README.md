@@ -83,7 +83,7 @@ you can also use it to cut Audio Files without any losses, but **it could get wr
     sudo mv audioextrator.sh /usr/local/bin/audioextrator.sh
     sudo chmod 755 /usr/local/bin/audioextrator.sh
 
-**感谢 [NoNoNo](https://github.com/NoNoNo/shellscripts-extractaudio)给予灵感。 **
+**感谢 [NoNoNo](https://github.com/NoNoNo/shellscripts-extractaudio)给予灵感。**
 
 **另见:**
 

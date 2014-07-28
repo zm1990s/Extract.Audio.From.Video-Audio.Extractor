@@ -38,7 +38,7 @@ fi
 echo start............................
 case $AUDIOCODEC in
 *aac*)
-ffmpeg -loglevel 0 -i "$@" -vn -acodec copy -map "$tracknum" "$1".aac && STATUSTEXT="Saved as $1.aac"|| STATUSTEXT="FFmpeg quit unsuccessfully!"
+ffmpeg -loglevel 0 -i "$@" -vn -acodec copy -map "$tracknum" "$1".m4a && STATUSTEXT="Saved as $1.m4a"|| STATUSTEXT="FFmpeg quit unsuccessfully!"
 ;;
 *mp3*)
  ffmpeg -loglevel 0 -i "$@" -vn -acodec copy -map "$tracknum" "$1".mp3 && STATUSTEXT="Saved as $1.mp3"|| STATUSTEXT="FFmpeg quit unsuccessfully!"

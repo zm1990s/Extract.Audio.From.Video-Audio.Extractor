@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Multimedia;
+Comment[en_US]=Audio-extrator
+Exec=~/Git/Audioextract/audioextrator.sh
+Icon=archive-extract
+GenericName[en_US]=
+GenericName=
+MimeType=
+Name[en_US]=Audio-extrator
+Path=~/Git/Audioextract/
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
